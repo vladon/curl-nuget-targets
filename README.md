@@ -17,3 +17,5 @@ The files are located as follows:
 
 * `curl.7.30.0.2\build\native\curl.targets`
 * `curl.redist.7.30.0.2\build\native\curl.redist.targets`
+
+NOTE: certain actions by NuGet will cause these modified files to be overwritten by the original versions.
