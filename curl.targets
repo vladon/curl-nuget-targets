@@ -43,7 +43,7 @@
       <AdditionalDependencies>$(MSBuildThisFileDirectory)../..//build/native/lib/v100\Win32\Release\dynamic\libcurl.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
-  <ItemDefinitionGroup Label="v110 and Win32 and Release and dynamic" Condition="( $(PlatformToolset.ToLower().IndexOf('v110')) &gt; -1 Or '$(PlatformToolset.ToLower())' == 'windowskernelmodedriver8.0' Or '$(PlatformToolset.ToLower())' == 'windowsapplicationfordrivers8.0' Or '$(PlatformToolset.ToLower())' == 'windowsusermodedriver8.0' ) And '$(Platform.ToLower())' == 'win32' And ( $(Configuration.ToLower().IndexOf('debug')) == -1 ) And '$(Linkage-curl.ToLower())' == 'dynamic'">
+  <ItemDefinitionGroup Label="v110 and Win32 and Release and dynamic" Condition="( '$(PlatformToolset.ToLower())' == 'ctp_nov2013' Or $(PlatformToolset.ToLower().IndexOf('v120')) &gt; -1 Or $(PlatformToolset.ToLower().IndexOf('v110')) &gt; -1 Or '$(PlatformToolset.ToLower())' == 'windowskernelmodedriver8.0' Or '$(PlatformToolset.ToLower())' == 'windowsapplicationfordrivers8.0' Or '$(PlatformToolset.ToLower())' == 'windowsusermodedriver8.0' ) And '$(Platform.ToLower())' == 'win32' And ( $(Configuration.ToLower().IndexOf('debug')) == -1 ) And '$(Linkage-curl.ToLower())' == 'dynamic'">
     <Link>
       <AdditionalDependencies>$(MSBuildThisFileDirectory)../..//build/native/lib/v110\Win32\Release\dynamic\libcurl.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
@@ -53,7 +53,7 @@
       <AdditionalDependencies>$(MSBuildThisFileDirectory)../..//build/native/lib/v100\x64\Release\dynamic\libcurl.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
-  <ItemDefinitionGroup Label="v110 and x64 and Release and dynamic" Condition="( $(PlatformToolset.ToLower().IndexOf('v110')) &gt; -1 Or '$(PlatformToolset.ToLower())' == 'windowskernelmodedriver8.0' Or '$(PlatformToolset.ToLower())' == 'windowsapplicationfordrivers8.0' Or '$(PlatformToolset.ToLower())' == 'windowsusermodedriver8.0' ) And '$(Platform.ToLower())' == 'x64' And ( $(Configuration.ToLower().IndexOf('debug')) == -1 ) And '$(Linkage-curl.ToLower())' == 'dynamic'">
+  <ItemDefinitionGroup Label="v110 and x64 and Release and dynamic" Condition="( '$(PlatformToolset.ToLower())' == 'ctp_nov2013' Or $(PlatformToolset.ToLower().IndexOf('v120')) &gt; -1 Or $(PlatformToolset.ToLower().IndexOf('v110')) &gt; -1 Or '$(PlatformToolset.ToLower())' == 'windowskernelmodedriver8.0' Or '$(PlatformToolset.ToLower())' == 'windowsapplicationfordrivers8.0' Or '$(PlatformToolset.ToLower())' == 'windowsusermodedriver8.0' ) And '$(Platform.ToLower())' == 'x64' And ( $(Configuration.ToLower().IndexOf('debug')) == -1 ) And '$(Linkage-curl.ToLower())' == 'dynamic'">
     <Link>
       <AdditionalDependencies>$(MSBuildThisFileDirectory)../..//build/native/lib/v110\x64\Release\dynamic\libcurl.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
@@ -63,7 +63,7 @@
       <AdditionalDependencies>$(MSBuildThisFileDirectory)../..//build/native/lib/v100\Win32\Debug\dynamic\libcurl.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
-  <ItemDefinitionGroup Label="v110 and Win32 and Debug and dynamic" Condition="( $(PlatformToolset.ToLower().IndexOf('v110')) &gt; -1 Or '$(PlatformToolset.ToLower())' == 'windowskernelmodedriver8.0' Or '$(PlatformToolset.ToLower())' == 'windowsapplicationfordrivers8.0' Or '$(PlatformToolset.ToLower())' == 'windowsusermodedriver8.0' ) And '$(Platform.ToLower())' == 'win32' And ( $(Configuration.ToLower().IndexOf('debug')) &gt; -1 ) And '$(Linkage-curl.ToLower())' == 'dynamic'">
+  <ItemDefinitionGroup Label="v110 and Win32 and Debug and dynamic" Condition="( '$(PlatformToolset.ToLower())' == 'ctp_nov2013' Or $(PlatformToolset.ToLower().IndexOf('v120')) &gt; -1 Or $(PlatformToolset.ToLower().IndexOf('v110')) &gt; -1 Or '$(PlatformToolset.ToLower())' == 'windowskernelmodedriver8.0' Or '$(PlatformToolset.ToLower())' == 'windowsapplicationfordrivers8.0' Or '$(PlatformToolset.ToLower())' == 'windowsusermodedriver8.0' ) And '$(Platform.ToLower())' == 'win32' And ( $(Configuration.ToLower().IndexOf('debug')) &gt; -1 ) And '$(Linkage-curl.ToLower())' == 'dynamic'">
     <Link>
       <AdditionalDependencies>$(MSBuildThisFileDirectory)../..//build/native/lib/v110\Win32\Debug\dynamic\libcurl.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
@@ -73,7 +73,7 @@
       <AdditionalDependencies>$(MSBuildThisFileDirectory)../..//build/native/lib/v100\x64\Debug\dynamic\libcurl.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
-  <ItemDefinitionGroup Label="v110 and x64 and Debug and dynamic" Condition="( $(PlatformToolset.ToLower().IndexOf('v110')) &gt; -1 Or '$(PlatformToolset.ToLower())' == 'windowskernelmodedriver8.0' Or '$(PlatformToolset.ToLower())' == 'windowsapplicationfordrivers8.0' Or '$(PlatformToolset.ToLower())' == 'windowsusermodedriver8.0' ) And '$(Platform.ToLower())' == 'x64' And ( $(Configuration.ToLower().IndexOf('debug')) &gt; -1 ) And '$(Linkage-curl.ToLower())' == 'dynamic'">
+  <ItemDefinitionGroup Label="v110 and x64 and Debug and dynamic" Condition="( '$(PlatformToolset.ToLower())' == 'ctp_nov2013' Or $(PlatformToolset.ToLower().IndexOf('v120')) &gt; -1 Or $(PlatformToolset.ToLower().IndexOf('v110')) &gt; -1 Or '$(PlatformToolset.ToLower())' == 'windowskernelmodedriver8.0' Or '$(PlatformToolset.ToLower())' == 'windowsapplicationfordrivers8.0' Or '$(PlatformToolset.ToLower())' == 'windowsusermodedriver8.0' ) And '$(Platform.ToLower())' == 'x64' And ( $(Configuration.ToLower().IndexOf('debug')) &gt; -1 ) And '$(Linkage-curl.ToLower())' == 'dynamic'">
     <Link>
       <AdditionalDependencies>$(MSBuildThisFileDirectory)../..//build/native/lib/v110\x64\Debug\dynamic\libcurl.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
@@ -83,7 +83,7 @@
       <AdditionalDependencies>$(MSBuildThisFileDirectory)../..//build/native/lib/v100\Win32\Release\static\libcurl.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
-  <ItemDefinitionGroup Label="v110 and Win32 and Release and static" Condition="( $(PlatformToolset.ToLower().IndexOf('v110')) &gt; -1 Or '$(PlatformToolset.ToLower())' == 'windowskernelmodedriver8.0' Or '$(PlatformToolset.ToLower())' == 'windowsapplicationfordrivers8.0' Or '$(PlatformToolset.ToLower())' == 'windowsusermodedriver8.0' ) And '$(Platform.ToLower())' == 'win32' And ( $(Configuration.ToLower().IndexOf('debug')) == -1 ) And '$(Linkage-curl.ToLower())' == 'static'">
+  <ItemDefinitionGroup Label="v110 and Win32 and Release and static" Condition="( '$(PlatformToolset.ToLower())' == 'ctp_nov2013' Or $(PlatformToolset.ToLower().IndexOf('v120')) &gt; -1 Or $(PlatformToolset.ToLower().IndexOf('v110')) &gt; -1 Or '$(PlatformToolset.ToLower())' == 'windowskernelmodedriver8.0' Or '$(PlatformToolset.ToLower())' == 'windowsapplicationfordrivers8.0' Or '$(PlatformToolset.ToLower())' == 'windowsusermodedriver8.0' ) And '$(Platform.ToLower())' == 'win32' And ( $(Configuration.ToLower().IndexOf('debug')) == -1 ) And '$(Linkage-curl.ToLower())' == 'static'">
     <Link>
       <AdditionalDependencies>$(MSBuildThisFileDirectory)../..//build/native/lib/v110\Win32\Release\static\libcurl.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
@@ -93,7 +93,7 @@
       <AdditionalDependencies>$(MSBuildThisFileDirectory)../..//build/native/lib/v100\x64\Release\static\libcurl.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
-  <ItemDefinitionGroup Label="v110 and x64 and Release and static" Condition="( $(PlatformToolset.ToLower().IndexOf('v110')) &gt; -1 Or '$(PlatformToolset.ToLower())' == 'windowskernelmodedriver8.0' Or '$(PlatformToolset.ToLower())' == 'windowsapplicationfordrivers8.0' Or '$(PlatformToolset.ToLower())' == 'windowsusermodedriver8.0' ) And '$(Platform.ToLower())' == 'x64' And ( $(Configuration.ToLower().IndexOf('debug')) == -1 ) And '$(Linkage-curl.ToLower())' == 'static'">
+  <ItemDefinitionGroup Label="v110 and x64 and Release and static" Condition="( '$(PlatformToolset.ToLower())' == 'ctp_nov2013' Or $(PlatformToolset.ToLower().IndexOf('v120')) &gt; -1 Or $(PlatformToolset.ToLower().IndexOf('v110')) &gt; -1 Or '$(PlatformToolset.ToLower())' == 'windowskernelmodedriver8.0' Or '$(PlatformToolset.ToLower())' == 'windowsapplicationfordrivers8.0' Or '$(PlatformToolset.ToLower())' == 'windowsusermodedriver8.0' ) And '$(Platform.ToLower())' == 'x64' And ( $(Configuration.ToLower().IndexOf('debug')) == -1 ) And '$(Linkage-curl.ToLower())' == 'static'">
     <Link>
       <AdditionalDependencies>$(MSBuildThisFileDirectory)../..//build/native/lib/v110\x64\Release\static\libcurl.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
@@ -103,7 +103,7 @@
       <AdditionalDependencies>$(MSBuildThisFileDirectory)../..//build/native/lib/v100\Win32\Debug\static\libcurl.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
-  <ItemDefinitionGroup Label="v110 and Win32 and Debug and static" Condition="( $(PlatformToolset.ToLower().IndexOf('v110')) &gt; -1 Or '$(PlatformToolset.ToLower())' == 'windowskernelmodedriver8.0' Or '$(PlatformToolset.ToLower())' == 'windowsapplicationfordrivers8.0' Or '$(PlatformToolset.ToLower())' == 'windowsusermodedriver8.0' ) And '$(Platform.ToLower())' == 'win32' And ( $(Configuration.ToLower().IndexOf('debug')) &gt; -1 ) And '$(Linkage-curl.ToLower())' == 'static'">
+  <ItemDefinitionGroup Label="v110 and Win32 and Debug and static" Condition="( '$(PlatformToolset.ToLower())' == 'ctp_nov2013' Or $(PlatformToolset.ToLower().IndexOf('v120')) &gt; -1 Or $(PlatformToolset.ToLower().IndexOf('v110')) &gt; -1 Or '$(PlatformToolset.ToLower())' == 'windowskernelmodedriver8.0' Or '$(PlatformToolset.ToLower())' == 'windowsapplicationfordrivers8.0' Or '$(PlatformToolset.ToLower())' == 'windowsusermodedriver8.0' ) And '$(Platform.ToLower())' == 'win32' And ( $(Configuration.ToLower().IndexOf('debug')) &gt; -1 ) And '$(Linkage-curl.ToLower())' == 'static'">
     <Link>
       <AdditionalDependencies>$(MSBuildThisFileDirectory)../..//build/native/lib/v110\Win32\Debug\static\libcurl.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
@@ -113,7 +113,7 @@
       <AdditionalDependencies>$(MSBuildThisFileDirectory)../..//build/native/lib/v100\x64\Debug\static\libcurl.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
-  <ItemDefinitionGroup Label="v110 and x64 and Debug and static" Condition="( $(PlatformToolset.ToLower().IndexOf('v110')) &gt; -1 Or '$(PlatformToolset.ToLower())' == 'windowskernelmodedriver8.0' Or '$(PlatformToolset.ToLower())' == 'windowsapplicationfordrivers8.0' Or '$(PlatformToolset.ToLower())' == 'windowsusermodedriver8.0' ) And '$(Platform.ToLower())' == 'x64' And ( $(Configuration.ToLower().IndexOf('debug')) &gt; -1 ) And '$(Linkage-curl.ToLower())' == 'static'">
+  <ItemDefinitionGroup Label="v110 and x64 and Debug and static" Condition="( '$(PlatformToolset.ToLower())' == 'ctp_nov2013' Or $(PlatformToolset.ToLower().IndexOf('v120')) &gt; -1 Or $(PlatformToolset.ToLower().IndexOf('v110')) &gt; -1 Or '$(PlatformToolset.ToLower())' == 'windowskernelmodedriver8.0' Or '$(PlatformToolset.ToLower())' == 'windowsapplicationfordrivers8.0' Or '$(PlatformToolset.ToLower())' == 'windowsusermodedriver8.0' ) And '$(Platform.ToLower())' == 'x64' And ( $(Configuration.ToLower().IndexOf('debug')) &gt; -1 ) And '$(Linkage-curl.ToLower())' == 'static'">
     <Link>
       <AdditionalDependencies>$(MSBuildThisFileDirectory)../..//build/native/lib/v110\x64\Debug\static\libcurl.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
@@ -123,7 +123,7 @@
       <AdditionalDependencies>$(MSBuildThisFileDirectory)../..//build/native/lib/v100\Win32\Release\ltcg\libcurl.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
-  <ItemDefinitionGroup Label="v110 and Win32 and Release and ltcg" Condition="( $(PlatformToolset.ToLower().IndexOf('v110')) &gt; -1 Or '$(PlatformToolset.ToLower())' == 'windowskernelmodedriver8.0' Or '$(PlatformToolset.ToLower())' == 'windowsapplicationfordrivers8.0' Or '$(PlatformToolset.ToLower())' == 'windowsusermodedriver8.0' ) And '$(Platform.ToLower())' == 'win32' And ( $(Configuration.ToLower().IndexOf('debug')) == -1 ) And '$(Linkage-curl.ToLower())' == 'ltcg'">
+  <ItemDefinitionGroup Label="v110 and Win32 and Release and ltcg" Condition="( '$(PlatformToolset.ToLower())' == 'ctp_nov2013' Or $(PlatformToolset.ToLower().IndexOf('v120')) &gt; -1 Or $(PlatformToolset.ToLower().IndexOf('v110')) &gt; -1 Or '$(PlatformToolset.ToLower())' == 'windowskernelmodedriver8.0' Or '$(PlatformToolset.ToLower())' == 'windowsapplicationfordrivers8.0' Or '$(PlatformToolset.ToLower())' == 'windowsusermodedriver8.0' ) And '$(Platform.ToLower())' == 'win32' And ( $(Configuration.ToLower().IndexOf('debug')) == -1 ) And '$(Linkage-curl.ToLower())' == 'ltcg'">
     <Link>
       <AdditionalDependencies>$(MSBuildThisFileDirectory)../..//build/native/lib/v110\Win32\Release\ltcg\libcurl.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
@@ -133,7 +133,7 @@
       <AdditionalDependencies>$(MSBuildThisFileDirectory)../..//build/native/lib/v100\x64\Release\ltcg\libcurl.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
-  <ItemDefinitionGroup Label="v110 and x64 and Release and ltcg" Condition="( $(PlatformToolset.ToLower().IndexOf('v110')) &gt; -1 Or '$(PlatformToolset.ToLower())' == 'windowskernelmodedriver8.0' Or '$(PlatformToolset.ToLower())' == 'windowsapplicationfordrivers8.0' Or '$(PlatformToolset.ToLower())' == 'windowsusermodedriver8.0' ) And '$(Platform.ToLower())' == 'x64' And ( $(Configuration.ToLower().IndexOf('debug')) == -1 ) And '$(Linkage-curl.ToLower())' == 'ltcg'">
+  <ItemDefinitionGroup Label="v110 and x64 and Release and ltcg" Condition="( '$(PlatformToolset.ToLower())' == 'ctp_nov2013' Or $(PlatformToolset.ToLower().IndexOf('v120')) &gt; -1 Or $(PlatformToolset.ToLower().IndexOf('v110')) &gt; -1 Or '$(PlatformToolset.ToLower())' == 'windowskernelmodedriver8.0' Or '$(PlatformToolset.ToLower())' == 'windowsapplicationfordrivers8.0' Or '$(PlatformToolset.ToLower())' == 'windowsusermodedriver8.0' ) And '$(Platform.ToLower())' == 'x64' And ( $(Configuration.ToLower().IndexOf('debug')) == -1 ) And '$(Linkage-curl.ToLower())' == 'ltcg'">
     <Link>
       <AdditionalDependencies>$(MSBuildThisFileDirectory)../..//build/native/lib/v110\x64\Release\ltcg\libcurl.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
@@ -143,7 +143,7 @@
       <AdditionalDependencies>$(MSBuildThisFileDirectory)../..//build/native/lib/v100\Win32\Debug\ltcg\libcurl.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
-  <ItemDefinitionGroup Label="v110 and Win32 and Debug and ltcg" Condition="( $(PlatformToolset.ToLower().IndexOf('v110')) &gt; -1 Or '$(PlatformToolset.ToLower())' == 'windowskernelmodedriver8.0' Or '$(PlatformToolset.ToLower())' == 'windowsapplicationfordrivers8.0' Or '$(PlatformToolset.ToLower())' == 'windowsusermodedriver8.0' ) And '$(Platform.ToLower())' == 'win32' And ( $(Configuration.ToLower().IndexOf('debug')) &gt; -1 ) And '$(Linkage-curl.ToLower())' == 'ltcg'">
+  <ItemDefinitionGroup Label="v110 and Win32 and Debug and ltcg" Condition="( '$(PlatformToolset.ToLower())' == 'ctp_nov2013' Or $(PlatformToolset.ToLower().IndexOf('v120')) &gt; -1 Or $(PlatformToolset.ToLower().IndexOf('v110')) &gt; -1 Or '$(PlatformToolset.ToLower())' == 'windowskernelmodedriver8.0' Or '$(PlatformToolset.ToLower())' == 'windowsapplicationfordrivers8.0' Or '$(PlatformToolset.ToLower())' == 'windowsusermodedriver8.0' ) And '$(Platform.ToLower())' == 'win32' And ( $(Configuration.ToLower().IndexOf('debug')) &gt; -1 ) And '$(Linkage-curl.ToLower())' == 'ltcg'">
     <Link>
       <AdditionalDependencies>$(MSBuildThisFileDirectory)../..//build/native/lib/v110\Win32\Debug\ltcg\libcurl.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
@@ -153,7 +153,7 @@
       <AdditionalDependencies>$(MSBuildThisFileDirectory)../..//build/native/lib/v100\x64\Debug\ltcg\libcurl.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
-  <ItemDefinitionGroup Label="v110 and x64 and Debug and ltcg" Condition="( $(PlatformToolset.ToLower().IndexOf('v110')) &gt; -1 Or '$(PlatformToolset.ToLower())' == 'windowskernelmodedriver8.0' Or '$(PlatformToolset.ToLower())' == 'windowsapplicationfordrivers8.0' Or '$(PlatformToolset.ToLower())' == 'windowsusermodedriver8.0' ) And '$(Platform.ToLower())' == 'x64' And ( $(Configuration.ToLower().IndexOf('debug')) &gt; -1 ) And '$(Linkage-curl.ToLower())' == 'ltcg'">
+  <ItemDefinitionGroup Label="v110 and x64 and Debug and ltcg" Condition="( '$(PlatformToolset.ToLower())' == 'ctp_nov2013' Or $(PlatformToolset.ToLower().IndexOf('v120')) &gt; -1 Or $(PlatformToolset.ToLower().IndexOf('v110')) &gt; -1 Or '$(PlatformToolset.ToLower())' == 'windowskernelmodedriver8.0' Or '$(PlatformToolset.ToLower())' == 'windowsapplicationfordrivers8.0' Or '$(PlatformToolset.ToLower())' == 'windowsusermodedriver8.0' ) And '$(Platform.ToLower())' == 'x64' And ( $(Configuration.ToLower().IndexOf('debug')) &gt; -1 ) And '$(Linkage-curl.ToLower())' == 'ltcg'">
     <Link>
       <AdditionalDependencies>$(MSBuildThisFileDirectory)../..//build/native/lib/v110\x64\Debug\ltcg\libcurl.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
@@ -191,73 +191,73 @@
     <SetEnv Condition="'$(PlatformToolset.ToLower())' == 'v100' And '$(Platform.ToLower())' == 'win32' And ( $(Configuration.ToLower().IndexOf('debug')) == -1 ) And '$(Linkage-curl.ToLower())' == 'dynamic'" Name="PATH" Prefix="true" Value="$(MSBuildThisFileDirectory)../..//tools/native/v100\Win32\Release\dynamic">
       <Output TaskParameter="OutputEnvironmentVariable" PropertyName="PATH" />
     </SetEnv>
-    <SetEnv Condition="( $(PlatformToolset.ToLower().IndexOf('v110')) &gt; -1 Or '$(PlatformToolset.ToLower())' == 'windowskernelmodedriver8.0' Or '$(PlatformToolset.ToLower())' == 'windowsapplicationfordrivers8.0' Or '$(PlatformToolset.ToLower())' == 'windowsusermodedriver8.0' ) And '$(Platform.ToLower())' == 'win32' And ( $(Configuration.ToLower().IndexOf('debug')) == -1 ) And '$(Linkage-curl.ToLower())' == 'dynamic'" Name="PATH" Prefix="true" Value="$(MSBuildThisFileDirectory)../..//tools/native/v110\Win32\Release\dynamic">
+    <SetEnv Condition="( '$(PlatformToolset.ToLower())' == 'ctp_nov2013' Or $(PlatformToolset.ToLower().IndexOf('v120')) &gt; -1 Or $(PlatformToolset.ToLower().IndexOf('v110')) &gt; -1 Or '$(PlatformToolset.ToLower())' == 'windowskernelmodedriver8.0' Or '$(PlatformToolset.ToLower())' == 'windowsapplicationfordrivers8.0' Or '$(PlatformToolset.ToLower())' == 'windowsusermodedriver8.0' ) And '$(Platform.ToLower())' == 'win32' And ( $(Configuration.ToLower().IndexOf('debug')) == -1 ) And '$(Linkage-curl.ToLower())' == 'dynamic'" Name="PATH" Prefix="true" Value="$(MSBuildThisFileDirectory)../..//tools/native/v110\Win32\Release\dynamic">
       <Output TaskParameter="OutputEnvironmentVariable" PropertyName="PATH" />
     </SetEnv>
     <SetEnv Condition="'$(PlatformToolset.ToLower())' == 'v100' And '$(Platform.ToLower())' == 'x64' And ( $(Configuration.ToLower().IndexOf('debug')) == -1 ) And '$(Linkage-curl.ToLower())' == 'dynamic'" Name="PATH" Prefix="true" Value="$(MSBuildThisFileDirectory)../..//tools/native/v100\x64\Release\dynamic">
       <Output TaskParameter="OutputEnvironmentVariable" PropertyName="PATH" />
     </SetEnv>
-    <SetEnv Condition="( $(PlatformToolset.ToLower().IndexOf('v110')) &gt; -1 Or '$(PlatformToolset.ToLower())' == 'windowskernelmodedriver8.0' Or '$(PlatformToolset.ToLower())' == 'windowsapplicationfordrivers8.0' Or '$(PlatformToolset.ToLower())' == 'windowsusermodedriver8.0' ) And '$(Platform.ToLower())' == 'x64' And ( $(Configuration.ToLower().IndexOf('debug')) == -1 ) And '$(Linkage-curl.ToLower())' == 'dynamic'" Name="PATH" Prefix="true" Value="$(MSBuildThisFileDirectory)../..//tools/native/v110\x64\Release\dynamic">
+    <SetEnv Condition="( '$(PlatformToolset.ToLower())' == 'ctp_nov2013' Or $(PlatformToolset.ToLower().IndexOf('v120')) &gt; -1 Or $(PlatformToolset.ToLower().IndexOf('v110')) &gt; -1 Or '$(PlatformToolset.ToLower())' == 'windowskernelmodedriver8.0' Or '$(PlatformToolset.ToLower())' == 'windowsapplicationfordrivers8.0' Or '$(PlatformToolset.ToLower())' == 'windowsusermodedriver8.0' ) And '$(Platform.ToLower())' == 'x64' And ( $(Configuration.ToLower().IndexOf('debug')) == -1 ) And '$(Linkage-curl.ToLower())' == 'dynamic'" Name="PATH" Prefix="true" Value="$(MSBuildThisFileDirectory)../..//tools/native/v110\x64\Release\dynamic">
       <Output TaskParameter="OutputEnvironmentVariable" PropertyName="PATH" />
     </SetEnv>
     <SetEnv Condition="'$(PlatformToolset.ToLower())' == 'v100' And '$(Platform.ToLower())' == 'win32' And ( $(Configuration.ToLower().IndexOf('debug')) &gt; -1 ) And '$(Linkage-curl.ToLower())' == 'dynamic'" Name="PATH" Prefix="true" Value="$(MSBuildThisFileDirectory)../..//tools/native/v100\Win32\Debug\dynamic">
       <Output TaskParameter="OutputEnvironmentVariable" PropertyName="PATH" />
     </SetEnv>
-    <SetEnv Condition="( $(PlatformToolset.ToLower().IndexOf('v110')) &gt; -1 Or '$(PlatformToolset.ToLower())' == 'windowskernelmodedriver8.0' Or '$(PlatformToolset.ToLower())' == 'windowsapplicationfordrivers8.0' Or '$(PlatformToolset.ToLower())' == 'windowsusermodedriver8.0' ) And '$(Platform.ToLower())' == 'win32' And ( $(Configuration.ToLower().IndexOf('debug')) &gt; -1 ) And '$(Linkage-curl.ToLower())' == 'dynamic'" Name="PATH" Prefix="true" Value="$(MSBuildThisFileDirectory)../..//tools/native/v110\Win32\Debug\dynamic">
+    <SetEnv Condition="( '$(PlatformToolset.ToLower())' == 'ctp_nov2013' Or $(PlatformToolset.ToLower().IndexOf('v120')) &gt; -1 Or $(PlatformToolset.ToLower().IndexOf('v110')) &gt; -1 Or '$(PlatformToolset.ToLower())' == 'windowskernelmodedriver8.0' Or '$(PlatformToolset.ToLower())' == 'windowsapplicationfordrivers8.0' Or '$(PlatformToolset.ToLower())' == 'windowsusermodedriver8.0' ) And '$(Platform.ToLower())' == 'win32' And ( $(Configuration.ToLower().IndexOf('debug')) &gt; -1 ) And '$(Linkage-curl.ToLower())' == 'dynamic'" Name="PATH" Prefix="true" Value="$(MSBuildThisFileDirectory)../..//tools/native/v110\Win32\Debug\dynamic">
       <Output TaskParameter="OutputEnvironmentVariable" PropertyName="PATH" />
     </SetEnv>
     <SetEnv Condition="'$(PlatformToolset.ToLower())' == 'v100' And '$(Platform.ToLower())' == 'x64' And ( $(Configuration.ToLower().IndexOf('debug')) &gt; -1 ) And '$(Linkage-curl.ToLower())' == 'dynamic'" Name="PATH" Prefix="true" Value="$(MSBuildThisFileDirectory)../..//tools/native/v100\x64\Debug\dynamic">
       <Output TaskParameter="OutputEnvironmentVariable" PropertyName="PATH" />
     </SetEnv>
-    <SetEnv Condition="( $(PlatformToolset.ToLower().IndexOf('v110')) &gt; -1 Or '$(PlatformToolset.ToLower())' == 'windowskernelmodedriver8.0' Or '$(PlatformToolset.ToLower())' == 'windowsapplicationfordrivers8.0' Or '$(PlatformToolset.ToLower())' == 'windowsusermodedriver8.0' ) And '$(Platform.ToLower())' == 'x64' And ( $(Configuration.ToLower().IndexOf('debug')) &gt; -1 ) And '$(Linkage-curl.ToLower())' == 'dynamic'" Name="PATH" Prefix="true" Value="$(MSBuildThisFileDirectory)../..//tools/native/v110\x64\Debug\dynamic">
+    <SetEnv Condition="( '$(PlatformToolset.ToLower())' == 'ctp_nov2013' Or $(PlatformToolset.ToLower().IndexOf('v120')) &gt; -1 Or $(PlatformToolset.ToLower().IndexOf('v110')) &gt; -1 Or '$(PlatformToolset.ToLower())' == 'windowskernelmodedriver8.0' Or '$(PlatformToolset.ToLower())' == 'windowsapplicationfordrivers8.0' Or '$(PlatformToolset.ToLower())' == 'windowsusermodedriver8.0' ) And '$(Platform.ToLower())' == 'x64' And ( $(Configuration.ToLower().IndexOf('debug')) &gt; -1 ) And '$(Linkage-curl.ToLower())' == 'dynamic'" Name="PATH" Prefix="true" Value="$(MSBuildThisFileDirectory)../..//tools/native/v110\x64\Debug\dynamic">
       <Output TaskParameter="OutputEnvironmentVariable" PropertyName="PATH" />
     </SetEnv>
     <SetEnv Condition="'$(PlatformToolset.ToLower())' == 'v100' And '$(Platform.ToLower())' == 'win32' And ( $(Configuration.ToLower().IndexOf('debug')) == -1 ) And '$(Linkage-curl.ToLower())' == 'static'" Name="PATH" Prefix="true" Value="$(MSBuildThisFileDirectory)../..//tools/native/v100\Win32\Release\static">
       <Output TaskParameter="OutputEnvironmentVariable" PropertyName="PATH" />
     </SetEnv>
-    <SetEnv Condition="( $(PlatformToolset.ToLower().IndexOf('v110')) &gt; -1 Or '$(PlatformToolset.ToLower())' == 'windowskernelmodedriver8.0' Or '$(PlatformToolset.ToLower())' == 'windowsapplicationfordrivers8.0' Or '$(PlatformToolset.ToLower())' == 'windowsusermodedriver8.0' ) And '$(Platform.ToLower())' == 'win32' And ( $(Configuration.ToLower().IndexOf('debug')) == -1 ) And '$(Linkage-curl.ToLower())' == 'static'" Name="PATH" Prefix="true" Value="$(MSBuildThisFileDirectory)../..//tools/native/v110\Win32\Release\static">
+    <SetEnv Condition="( '$(PlatformToolset.ToLower())' == 'ctp_nov2013' Or $(PlatformToolset.ToLower().IndexOf('v120')) &gt; -1 Or $(PlatformToolset.ToLower().IndexOf('v110')) &gt; -1 Or '$(PlatformToolset.ToLower())' == 'windowskernelmodedriver8.0' Or '$(PlatformToolset.ToLower())' == 'windowsapplicationfordrivers8.0' Or '$(PlatformToolset.ToLower())' == 'windowsusermodedriver8.0' ) And '$(Platform.ToLower())' == 'win32' And ( $(Configuration.ToLower().IndexOf('debug')) == -1 ) And '$(Linkage-curl.ToLower())' == 'static'" Name="PATH" Prefix="true" Value="$(MSBuildThisFileDirectory)../..//tools/native/v110\Win32\Release\static">
       <Output TaskParameter="OutputEnvironmentVariable" PropertyName="PATH" />
     </SetEnv>
     <SetEnv Condition="'$(PlatformToolset.ToLower())' == 'v100' And '$(Platform.ToLower())' == 'x64' And ( $(Configuration.ToLower().IndexOf('debug')) == -1 ) And '$(Linkage-curl.ToLower())' == 'static'" Name="PATH" Prefix="true" Value="$(MSBuildThisFileDirectory)../..//tools/native/v100\x64\Release\static">
       <Output TaskParameter="OutputEnvironmentVariable" PropertyName="PATH" />
     </SetEnv>
-    <SetEnv Condition="( $(PlatformToolset.ToLower().IndexOf('v110')) &gt; -1 Or '$(PlatformToolset.ToLower())' == 'windowskernelmodedriver8.0' Or '$(PlatformToolset.ToLower())' == 'windowsapplicationfordrivers8.0' Or '$(PlatformToolset.ToLower())' == 'windowsusermodedriver8.0' ) And '$(Platform.ToLower())' == 'x64' And ( $(Configuration.ToLower().IndexOf('debug')) == -1 ) And '$(Linkage-curl.ToLower())' == 'static'" Name="PATH" Prefix="true" Value="$(MSBuildThisFileDirectory)../..//tools/native/v110\x64\Release\static">
+    <SetEnv Condition="( '$(PlatformToolset.ToLower())' == 'ctp_nov2013' Or $(PlatformToolset.ToLower().IndexOf('v120')) &gt; -1 Or $(PlatformToolset.ToLower().IndexOf('v110')) &gt; -1 Or '$(PlatformToolset.ToLower())' == 'windowskernelmodedriver8.0' Or '$(PlatformToolset.ToLower())' == 'windowsapplicationfordrivers8.0' Or '$(PlatformToolset.ToLower())' == 'windowsusermodedriver8.0' ) And '$(Platform.ToLower())' == 'x64' And ( $(Configuration.ToLower().IndexOf('debug')) == -1 ) And '$(Linkage-curl.ToLower())' == 'static'" Name="PATH" Prefix="true" Value="$(MSBuildThisFileDirectory)../..//tools/native/v110\x64\Release\static">
       <Output TaskParameter="OutputEnvironmentVariable" PropertyName="PATH" />
     </SetEnv>
     <SetEnv Condition="'$(PlatformToolset.ToLower())' == 'v100' And '$(Platform.ToLower())' == 'win32' And ( $(Configuration.ToLower().IndexOf('debug')) &gt; -1 ) And '$(Linkage-curl.ToLower())' == 'static'" Name="PATH" Prefix="true" Value="$(MSBuildThisFileDirectory)../..//tools/native/v100\Win32\Debug\static">
       <Output TaskParameter="OutputEnvironmentVariable" PropertyName="PATH" />
     </SetEnv>
-    <SetEnv Condition="( $(PlatformToolset.ToLower().IndexOf('v110')) &gt; -1 Or '$(PlatformToolset.ToLower())' == 'windowskernelmodedriver8.0' Or '$(PlatformToolset.ToLower())' == 'windowsapplicationfordrivers8.0' Or '$(PlatformToolset.ToLower())' == 'windowsusermodedriver8.0' ) And '$(Platform.ToLower())' == 'win32' And ( $(Configuration.ToLower().IndexOf('debug')) &gt; -1 ) And '$(Linkage-curl.ToLower())' == 'static'" Name="PATH" Prefix="true" Value="$(MSBuildThisFileDirectory)../..//tools/native/v110\Win32\Debug\static">
+    <SetEnv Condition="( '$(PlatformToolset.ToLower())' == 'ctp_nov2013' Or $(PlatformToolset.ToLower().IndexOf('v120')) &gt; -1 Or $(PlatformToolset.ToLower().IndexOf('v110')) &gt; -1 Or '$(PlatformToolset.ToLower())' == 'windowskernelmodedriver8.0' Or '$(PlatformToolset.ToLower())' == 'windowsapplicationfordrivers8.0' Or '$(PlatformToolset.ToLower())' == 'windowsusermodedriver8.0' ) And '$(Platform.ToLower())' == 'win32' And ( $(Configuration.ToLower().IndexOf('debug')) &gt; -1 ) And '$(Linkage-curl.ToLower())' == 'static'" Name="PATH" Prefix="true" Value="$(MSBuildThisFileDirectory)../..//tools/native/v110\Win32\Debug\static">
       <Output TaskParameter="OutputEnvironmentVariable" PropertyName="PATH" />
     </SetEnv>
     <SetEnv Condition="'$(PlatformToolset.ToLower())' == 'v100' And '$(Platform.ToLower())' == 'x64' And ( $(Configuration.ToLower().IndexOf('debug')) &gt; -1 ) And '$(Linkage-curl.ToLower())' == 'static'" Name="PATH" Prefix="true" Value="$(MSBuildThisFileDirectory)../..//tools/native/v100\x64\Debug\static">
       <Output TaskParameter="OutputEnvironmentVariable" PropertyName="PATH" />
     </SetEnv>
-    <SetEnv Condition="( $(PlatformToolset.ToLower().IndexOf('v110')) &gt; -1 Or '$(PlatformToolset.ToLower())' == 'windowskernelmodedriver8.0' Or '$(PlatformToolset.ToLower())' == 'windowsapplicationfordrivers8.0' Or '$(PlatformToolset.ToLower())' == 'windowsusermodedriver8.0' ) And '$(Platform.ToLower())' == 'x64' And ( $(Configuration.ToLower().IndexOf('debug')) &gt; -1 ) And '$(Linkage-curl.ToLower())' == 'static'" Name="PATH" Prefix="true" Value="$(MSBuildThisFileDirectory)../..//tools/native/v110\x64\Debug\static">
+    <SetEnv Condition="( '$(PlatformToolset.ToLower())' == 'ctp_nov2013' Or $(PlatformToolset.ToLower().IndexOf('v120')) &gt; -1 Or $(PlatformToolset.ToLower().IndexOf('v110')) &gt; -1 Or '$(PlatformToolset.ToLower())' == 'windowskernelmodedriver8.0' Or '$(PlatformToolset.ToLower())' == 'windowsapplicationfordrivers8.0' Or '$(PlatformToolset.ToLower())' == 'windowsusermodedriver8.0' ) And '$(Platform.ToLower())' == 'x64' And ( $(Configuration.ToLower().IndexOf('debug')) &gt; -1 ) And '$(Linkage-curl.ToLower())' == 'static'" Name="PATH" Prefix="true" Value="$(MSBuildThisFileDirectory)../..//tools/native/v110\x64\Debug\static">
       <Output TaskParameter="OutputEnvironmentVariable" PropertyName="PATH" />
     </SetEnv>
     <SetEnv Condition="'$(PlatformToolset.ToLower())' == 'v100' And '$(Platform.ToLower())' == 'win32' And ( $(Configuration.ToLower().IndexOf('debug')) == -1 ) And '$(Linkage-curl.ToLower())' == 'ltcg'" Name="PATH" Prefix="true" Value="$(MSBuildThisFileDirectory)../..//tools/native/v100\Win32\Release\ltcg">
       <Output TaskParameter="OutputEnvironmentVariable" PropertyName="PATH" />
     </SetEnv>
-    <SetEnv Condition="( $(PlatformToolset.ToLower().IndexOf('v110')) &gt; -1 Or '$(PlatformToolset.ToLower())' == 'windowskernelmodedriver8.0' Or '$(PlatformToolset.ToLower())' == 'windowsapplicationfordrivers8.0' Or '$(PlatformToolset.ToLower())' == 'windowsusermodedriver8.0' ) And '$(Platform.ToLower())' == 'win32' And ( $(Configuration.ToLower().IndexOf('debug')) == -1 ) And '$(Linkage-curl.ToLower())' == 'ltcg'" Name="PATH" Prefix="true" Value="$(MSBuildThisFileDirectory)../..//tools/native/v110\Win32\Release\ltcg">
+    <SetEnv Condition="( '$(PlatformToolset.ToLower())' == 'ctp_nov2013' Or $(PlatformToolset.ToLower().IndexOf('v120')) &gt; -1 Or $(PlatformToolset.ToLower().IndexOf('v110')) &gt; -1 Or '$(PlatformToolset.ToLower())' == 'windowskernelmodedriver8.0' Or '$(PlatformToolset.ToLower())' == 'windowsapplicationfordrivers8.0' Or '$(PlatformToolset.ToLower())' == 'windowsusermodedriver8.0' ) And '$(Platform.ToLower())' == 'win32' And ( $(Configuration.ToLower().IndexOf('debug')) == -1 ) And '$(Linkage-curl.ToLower())' == 'ltcg'" Name="PATH" Prefix="true" Value="$(MSBuildThisFileDirectory)../..//tools/native/v110\Win32\Release\ltcg">
       <Output TaskParameter="OutputEnvironmentVariable" PropertyName="PATH" />
     </SetEnv>
     <SetEnv Condition="'$(PlatformToolset.ToLower())' == 'v100' And '$(Platform.ToLower())' == 'x64' And ( $(Configuration.ToLower().IndexOf('debug')) == -1 ) And '$(Linkage-curl.ToLower())' == 'ltcg'" Name="PATH" Prefix="true" Value="$(MSBuildThisFileDirectory)../..//tools/native/v100\x64\Release\ltcg">
       <Output TaskParameter="OutputEnvironmentVariable" PropertyName="PATH" />
     </SetEnv>
-    <SetEnv Condition="( $(PlatformToolset.ToLower().IndexOf('v110')) &gt; -1 Or '$(PlatformToolset.ToLower())' == 'windowskernelmodedriver8.0' Or '$(PlatformToolset.ToLower())' == 'windowsapplicationfordrivers8.0' Or '$(PlatformToolset.ToLower())' == 'windowsusermodedriver8.0' ) And '$(Platform.ToLower())' == 'x64' And ( $(Configuration.ToLower().IndexOf('debug')) == -1 ) And '$(Linkage-curl.ToLower())' == 'ltcg'" Name="PATH" Prefix="true" Value="$(MSBuildThisFileDirectory)../..//tools/native/v110\x64\Release\ltcg">
+    <SetEnv Condition="( '$(PlatformToolset.ToLower())' == 'ctp_nov2013' Or $(PlatformToolset.ToLower().IndexOf('v120')) &gt; -1 Or $(PlatformToolset.ToLower().IndexOf('v110')) &gt; -1 Or '$(PlatformToolset.ToLower())' == 'windowskernelmodedriver8.0' Or '$(PlatformToolset.ToLower())' == 'windowsapplicationfordrivers8.0' Or '$(PlatformToolset.ToLower())' == 'windowsusermodedriver8.0' ) And '$(Platform.ToLower())' == 'x64' And ( $(Configuration.ToLower().IndexOf('debug')) == -1 ) And '$(Linkage-curl.ToLower())' == 'ltcg'" Name="PATH" Prefix="true" Value="$(MSBuildThisFileDirectory)../..//tools/native/v110\x64\Release\ltcg">
       <Output TaskParameter="OutputEnvironmentVariable" PropertyName="PATH" />
     </SetEnv>
     <SetEnv Condition="'$(PlatformToolset.ToLower())' == 'v100' And '$(Platform.ToLower())' == 'win32' And ( $(Configuration.ToLower().IndexOf('debug')) &gt; -1 ) And '$(Linkage-curl.ToLower())' == 'ltcg'" Name="PATH" Prefix="true" Value="$(MSBuildThisFileDirectory)../..//tools/native/v100\Win32\Debug\ltcg">
       <Output TaskParameter="OutputEnvironmentVariable" PropertyName="PATH" />
     </SetEnv>
-    <SetEnv Condition="( $(PlatformToolset.ToLower().IndexOf('v110')) &gt; -1 Or '$(PlatformToolset.ToLower())' == 'windowskernelmodedriver8.0' Or '$(PlatformToolset.ToLower())' == 'windowsapplicationfordrivers8.0' Or '$(PlatformToolset.ToLower())' == 'windowsusermodedriver8.0' ) And '$(Platform.ToLower())' == 'win32' And ( $(Configuration.ToLower().IndexOf('debug')) &gt; -1 ) And '$(Linkage-curl.ToLower())' == 'ltcg'" Name="PATH" Prefix="true" Value="$(MSBuildThisFileDirectory)../..//tools/native/v110\Win32\Debug\ltcg">
+    <SetEnv Condition="( '$(PlatformToolset.ToLower())' == 'ctp_nov2013' Or $(PlatformToolset.ToLower().IndexOf('v120')) &gt; -1 Or $(PlatformToolset.ToLower().IndexOf('v110')) &gt; -1 Or '$(PlatformToolset.ToLower())' == 'windowskernelmodedriver8.0' Or '$(PlatformToolset.ToLower())' == 'windowsapplicationfordrivers8.0' Or '$(PlatformToolset.ToLower())' == 'windowsusermodedriver8.0' ) And '$(Platform.ToLower())' == 'win32' And ( $(Configuration.ToLower().IndexOf('debug')) &gt; -1 ) And '$(Linkage-curl.ToLower())' == 'ltcg'" Name="PATH" Prefix="true" Value="$(MSBuildThisFileDirectory)../..//tools/native/v110\Win32\Debug\ltcg">
       <Output TaskParameter="OutputEnvironmentVariable" PropertyName="PATH" />
     </SetEnv>
     <SetEnv Condition="'$(PlatformToolset.ToLower())' == 'v100' And '$(Platform.ToLower())' == 'x64' And ( $(Configuration.ToLower().IndexOf('debug')) &gt; -1 ) And '$(Linkage-curl.ToLower())' == 'ltcg'" Name="PATH" Prefix="true" Value="$(MSBuildThisFileDirectory)../..//tools/native/v100\x64\Debug\ltcg">
       <Output TaskParameter="OutputEnvironmentVariable" PropertyName="PATH" />
     </SetEnv>
-    <SetEnv Condition="( $(PlatformToolset.ToLower().IndexOf('v110')) &gt; -1 Or '$(PlatformToolset.ToLower())' == 'windowskernelmodedriver8.0' Or '$(PlatformToolset.ToLower())' == 'windowsapplicationfordrivers8.0' Or '$(PlatformToolset.ToLower())' == 'windowsusermodedriver8.0' ) And '$(Platform.ToLower())' == 'x64' And ( $(Configuration.ToLower().IndexOf('debug')) &gt; -1 ) And '$(Linkage-curl.ToLower())' == 'ltcg'" Name="PATH" Prefix="true" Value="$(MSBuildThisFileDirectory)../..//tools/native/v110\x64\Debug\ltcg">
+    <SetEnv Condition="( '$(PlatformToolset.ToLower())' == 'ctp_nov2013' Or $(PlatformToolset.ToLower().IndexOf('v120')) &gt; -1 Or $(PlatformToolset.ToLower().IndexOf('v110')) &gt; -1 Or '$(PlatformToolset.ToLower())' == 'windowskernelmodedriver8.0' Or '$(PlatformToolset.ToLower())' == 'windowsapplicationfordrivers8.0' Or '$(PlatformToolset.ToLower())' == 'windowsusermodedriver8.0' ) And '$(Platform.ToLower())' == 'x64' And ( $(Configuration.ToLower().IndexOf('debug')) &gt; -1 ) And '$(Linkage-curl.ToLower())' == 'ltcg'" Name="PATH" Prefix="true" Value="$(MSBuildThisFileDirectory)../..//tools/native/v110\x64\Debug\ltcg">
       <Output TaskParameter="OutputEnvironmentVariable" PropertyName="PATH" />
     </SetEnv>
   </Target>
