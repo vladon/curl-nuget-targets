@@ -3,7 +3,7 @@ cURL NuGet Targets Patch
 
 Patch for nuget package of curl.7.30.0.2 and curl.redist.7.30.0.2 to support v120 (VS2013 default) and CTP_Nov2013 compilers.
 
-The cURL NuGet packages for both curl.7.30.0.2 and curl.redist.7.30.0.2 contain multiple of the following condition:
+The cURL NuGet packages for both [curl.7.30.0.2](https://www.nuget.org/packages/curl/) and [curl.redist.7.30.0.2](https://www.nuget.org/packages/curl.redist/) contain multiple of the following condition:
 
 `$(PlatformToolset.ToLower().IndexOf('v110')) &gt; -1`
 
